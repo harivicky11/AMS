@@ -1,0 +1,28 @@
+<h3><a class="btn btn-secondary" href="/stu"><i class="fa fa-plus"></i>Create New</a>Student Attendance list</h3>
+</h3>
+<table class="table table-stripped">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Grade</th>
+            <th>Month</th>
+            <th>Year</th>
+            <th>Attendance Count</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.fullName}}</td>
+            <td>{{this.classGrade}}</td>
+            <td>{{this.month}}</td>
+            <td>{{this.year}}</td>
+            <td>{{this.attCount}}</td>
+            <td>
+                <a href="/stu/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a href="/stu/delete/{{this._id}}"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

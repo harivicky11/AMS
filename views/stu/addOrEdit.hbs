@@ -1,0 +1,29 @@
+<h3>{{viewTitle}}</h3>
+
+<form action="/stu" method="POST">
+    <input type = "hidden" name="_id" value="{{stu._id}}">
+    <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" class="form-control" name="fullName" placeholder="Full Name" value="{{stu.fullName}}">
+    </div>
+    <div class="form-group">
+        <label>Grade</label>
+        <input type="text" class="form-control" name="classGrade" placeholder="Grade represented in 1-10" value="{{stu.classGrade}}">
+    </div>
+    <div class="form-group">
+        <label>Month</label>
+        <input type="text" class="form-control" name="month" placeholder="Month represented in 1-12" value="{{stu.month}}">
+    </div>
+    <div class="form-group">
+        <label>Year</label>
+        <input type="text" class="form-control" name="year" placeholder="Year" value="{{stu.year}}">
+    </div>
+    <div class="form-group">
+        <label>Attendance</label>
+        <input type="text" class="form-control" name="attCount" placeholder="Count" value="{{stu.attCount}}">
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i>submit</button>
+        <a class="btn btn-secondary" href="/stu/list"><i class="fa fa-list-all"></i>View All</a>
+    </div>
+</form>
