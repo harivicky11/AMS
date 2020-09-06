@@ -3,6 +3,10 @@ var router = express.Router();
 const mongoose = require('mongoose');
 const Student = mongoose.model('Student');
 
+// ========================
+// Routes
+// ========================
+
 router.get('/', (req, res) => {
     res.render("stu/addOrEdit", {
         viewTitle : "Insert Student"
