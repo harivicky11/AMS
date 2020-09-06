@@ -1,6 +1,6 @@
 # ATTENDANCE MANAGEMENT SYSTEM
 
-    AMS is a simple web application that demonstrates the CRUD operations. It provides a simple form
+AMS is a simple web application that demonstrates the CRUD operations. It provides a simple form
 which takes name, grade, month, year and count of attended days as input and stores it in a database
 which can be edited or deleted later.
 
